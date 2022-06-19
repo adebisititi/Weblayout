@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    max-width: 1440px;
+}
+.indexBtn{
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+main{
+    background-color: rgb(19, 19, 51);
+    width: 60%;
+    height: 80vh;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+section{
+    display: grid;
+    grid-template-areas: 
+    "a a a a b b"
+    "a a a a b b"
+    "c c c d d d"
+    "c c c e e e";
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 30px;
+    gap: 10px;
+}
+.item-a{
+    background-color: rgb(248, 145, 19);
+    grid-area: a;
+}
+.item-b{
+    background-color: red;
+    grid-area: b;
+}
+.item-c{
+    background-color: green;
+    grid-area: c;
+}
+.item-d{
+    background-color: blue;
+    grid-area: d;
+}
+.item-e{
+    background-color: blueviolet;
+    grid-area: e;
+}
+
+@media screen and (max-width:375px) {
+    main {
+            background-color: rgb(19, 19, 51);
+            width: 60%;
+            height: 80vh;
+            padding: 10px;
+            margin: auto;
+            margin-top: 20px;
+        }
+}

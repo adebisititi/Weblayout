@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html,body{
+    max-width: 1440px;
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+}
+.grid{
+    font-size: 16px;
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.gridBtn{
+    text-align: center;
+}
+.sedanBox{
+    background-color: hsl(31, 77%, 52%);
+    width: 270px;
+    padding: 40px;
+    border:none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.suvBox{
+    background-color: hsl(184, 100%, 22%);
+    width: 270px;
+    padding: 40px;
+    border: none;
+}
+.luxuryBox{
+    background-color: hsl(179, 100%, 13%);
+    width: 270px;
+    padding: 40px;
+    border: none;
+    border-top-right-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 95%);
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 30px;
+}
+.btn1{
+    margin-top: 30px;
+    padding: 10px;
+    width: 110px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+    cursor: pointer;
+}
+.btn2{
+    margin-top: 30px;
+    padding: 10px;
+    width: 110px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+    cursor: pointer;
+}
+.btn3{
+    margin-top: 30px;
+    padding: 10px;
+    width: 110px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+    cursor: pointer;
+}
+.btn1:hover,
+.btn2:hover,
+.btn3:hover{
+    background-color: transparent;
+    color:hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.parent_container{
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width:375px) {
+    .parent_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .sedanBox{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0;
+    }.luxuryBox{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0;
+    }
+}
